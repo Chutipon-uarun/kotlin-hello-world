@@ -1,5 +1,6 @@
 fun main() {
-
+    var hip = Hippo ()
+    hip.eat()
 }
 open class Animal{
 open  val image = ""
@@ -19,4 +20,7 @@ open  val habitat = ""
     fun  sleep () {
         println("The Animal is sleeping")
     }
+}
+class Hippo : Animal() {
+    //สร้างคลาส Hippo แต่ยังไม่ได้ทำอะไร
 }
