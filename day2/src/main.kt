@@ -1,4 +1,5 @@
 fun main() {
+
     var myhippo = Hippo()
     myhippo.eat()
     myhippo.roam()
@@ -11,6 +12,12 @@ fun main() {
     mycat.roam()
     mycat.makeNoise()
     mycat.sleep()
+
+    var mydog = cat()
+    mydog.eat()
+    mydog.roam()
+    mydog.makeNoise()
+    mydog.sleep()
 }
 
 open class Animal{
@@ -60,3 +67,16 @@ class cat : Animal () {
         println("The cat is eating $food")
     }
     }
+
+class dog : Animal () {
+    override val  image = "dog.jpg"
+    override val  food = "อาหารเม็ด"
+    override val  habitat = "house"
+    override fun makeNoise() {
+        println("โฮ่งๆ")
+    }
+    override fun eat() {
+        println("The dog is eating $food")
+
+    }
+}
